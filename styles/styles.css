@@ -41,6 +41,36 @@
 
 /* --------------- 3.1 Header ------------------------- */
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navigation ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+/*Border check*/
+
+/*nav {*/
+/*    border: 1px var(--Pink);*/
+/*    border-style: solid;*/
+/*}*/
+/*li {*/
+/*    border: 1px var(--Black);*/
+/*    border-style: solid;*/
+/*}*/
+
 /* --------------- 3.2 Introduction ------------------- */
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
