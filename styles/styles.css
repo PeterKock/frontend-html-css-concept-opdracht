@@ -72,6 +72,13 @@ button:hover {
     cursor: pointer;
 }
 
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--Purple);
+}
+
 /* ------------------------------- 3. Areas ---------------------------------------- */
 
 /* --------------- 3.1 Header ------------------------- */
@@ -109,12 +116,18 @@ button:hover {
 }
 
 .header-content {
-
-
     padding: 100px 0;
     margin-bottom: 88px;
     font-size: 28px;
+}
 
+.header-squiggly {
+    display: block;
+    width: 78px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../assets/squiggle_line_stripe.svg);
 }
 
 
@@ -136,6 +149,12 @@ button:hover {
 #intro {
     background-color: white;
     color: var(--Purple);
+}
+
+.intro-link {
+    color: #0c0c0c;
+    font-weight: 500;
+    margin-top: 100px;
 }
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
