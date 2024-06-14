@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
 
+:root {
+    --Purple: #5722CD;
+    --Blue: #4845E4;
+    --Pink: #ED4385;
+    --Black: #0C0C0C;
+    --Light-Purple: #F2F0FF;
+    --Light-Gray: #F3F6F9;
+    --Gray: #7A7A7A;
+}
+
+/*How to use example:*/
+
+/*div {*/
+/*    border-color: var(--Light-Gray);*/
+/*}*/
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
