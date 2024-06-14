@@ -31,6 +31,46 @@
 
 /* ------------------------------- 1. Typography ----------------------------------- */
 
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-size: 46px;
+    padding: 16px 0;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+    padding: 12px 0;
+    margin: 24px 0;
+}
+
+h5 {
+    font-size: 32px;
+    padding: 12px 0;
+}
+
+h6 {
+    font-size: 32px;
+    line-height: 1.5;
+    padding: 12px 0;
+}
+
+p {
+    margin: 12px 0;
+}
+
 /* ------------------------------- 2. Layout --------------------------------------- */
 
 /* --------------- 2.1 Reusable ----------------------- */
@@ -119,6 +159,9 @@ a:link {
     padding: 100px 0;
     margin-bottom: 88px;
     font-size: 28px;
+
+    max-width: 850px;
+    text-align: center;
 }
 
 .header-squiggly {
@@ -149,6 +192,7 @@ a:link {
 #intro {
     background-color: white;
     color: var(--Purple);
+    padding: 100px 0;
 }
 
 .intro-link {
