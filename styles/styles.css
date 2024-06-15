@@ -307,6 +307,52 @@ a:link {
 
 /* --------------- 3.5 Contact Us --------------------------- */
 
+#contactus {
+    background: var(--Blue);
+    background: linear-gradient(131deg, #4845E4 0%, #4c49b6 58%, #7068fc  100%);
+    color: white;
+    position: relative;
+}
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    background-color: white;
+    border: 1px solid var(--Gray);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--Gray);
+    width: 100%;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.contact-form button {
+    width: 200px;
+    align-self: center;
+}
+
+.contact-form input::placeholder {
+    color: var(--Black);
+}
+
+.contact-form textarea::placeholder {
+    color: var(--Black);
+}
+
+/* --------------- 3.5 Contact Us --------------------------- */
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
