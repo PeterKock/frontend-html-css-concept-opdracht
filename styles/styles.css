@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --Purple: #5722CD;
+    --Blue: #4845E4;
+    --Pink: #ED4385;
+    --Black: #0C0C0C;
+    --Light-Purple: #F2F0FF;
+    --Light-Gray: #F3F6F9;
+    --Gray: #7A7A7A;
+}
+
+/*How to use example:*/
+
+/*div {*/
+/*    border-color: var(--Light-Gray);*/
+/*}*/
+
+/*////////////////////////
+    Table of Contents
+    1. Typography
+    2. Layout
+        2.1 Reusable
+        2.2 Other
+    3. Areas
+        3.1 Header
+        3.2 Introduction
+        3.3 Case Studies
+        3.4 Services
+        3.5 Contact Us
+        3.5 Footer
+    4. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Typography ----------------------------------- */
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: Merriweather, 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-size: 46px;
+    padding: 16px 0;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+    padding: 12px 0;
+    margin: 24px 0;
+}
+
+h5 {
+    font-size: 32px;
+    padding: 12px 0;
+}
+
+h6 {
+    font-size: 32px;
+    line-height: 1.5;
+    padding: 12px 0;
+}
+
+p {
+    margin: 12px 0;
+}
+
+/* ------------------------------- 2. Layout --------------------------------------- */
+
+/* --------------- 2.1 Reusable ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin: 0 20px;
+}
+
+.top-padding {
+    padding: 100px 0;
+}
+
+.text-center {
+    text-align: center;
+    max-width: 1000px
+}
+/* --------------- 2.2 Other --------------------------- */
+
+button {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: var(--Pink);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 4px rgba(5, 5, 5, 0.3);
+    padding: 25px 40px;
+    margin: 28px 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--Purple);
+}
+
+/* ------------------------------- 3. Areas ---------------------------------------- */
+
+/* --------------- 3.1 Header ------------------------- */
+
+
+#header {
+    background: var(--Blue);
+    background: linear-gradient(131deg, #4845E4 0%, #4c49b6 58%, #7068fc  100%);
+    color: white;
+    padding: 30px 0;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navigation ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.navigation a {
+    color: white;
+}
+
+.header-content {
+    padding: 100px 0;
+    margin-bottom: 88px;
+    font-size: 28px;
+}
+
+.header-squiggly {
+    display: block;
+    width: 78px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../assets/squiggle_line_stripe.svg);
+}
+
+
+
+
+/*Border check*/
+
+/*nav {*/
+/*    border: 1px var(--Pink);*/
+/*    border-style: solid;*/
+/*}*/
+/*li {*/
+/*    border: 1px var(--Black);*/
+/*    border-style: solid;*/
+/*}*/
+
+/* --------------- 3.2 Introduction ------------------- */
+
+#intro {
+    background-color: white;
+    color: var(--Purple);
+    padding: 100px 0;
+}
+
+.intro-link {
+    color: #0c0c0c;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+/* --------------- 3.3 Case Studies --------------------------- */
+
+#casestudies {
+    background-color: var(--Light-Gray);
+}
+
+.case-article-image-wrap img {
+    width: 100%;
+    box-shadow: 0 10px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+.case-article-image-wrap {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.case-article:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.case-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.case-article-container {
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 40px 40px 40px;
+}
+
+.case-article-container p {
+    font-weight: 400;
+    margin: 50px 0;
+}
+
+.case-article-squiggly {
+    margin-top: 24px;
+    width: 57px;
+    height: 6px;
+    background-image: url(../assets/squiggle_line.svg);
+}
+
+.case-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --------------- 3.4 Services --------------------------- */
+
+#services {
+    background-color: white;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 420px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    padding: 30px;
+    background-color: white;
+    border: 4px solid var(--Purple);
+    box-shadow: 0 10px 6px -4px rgba(0, 0, 0, 0.3);
+    color: var(--Gray);
+    font-size: 26px;
+}
+
+.service-box-header {
+    color: var(--Purple);
+    font-size: 26px;
+}
+
+.service-box-icon {
+    width: 100px;
+}
+
+#services div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* --------------- 3.5 Contact Us --------------------------- */
+
+#contactus {
+    background: var(--Blue);
+    background: linear-gradient(131deg, #4845E4 0%, #4c49b6 58%, #7068fc  100%);
+    color: white;
+    position: relative;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    background-color: white;
+    border: 1px solid var(--Gray);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--Gray);
+    width: 100%;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.contact-form button {
+    width: 200px;
+    align-self: center;
+}
+
+.contact-form input::placeholder {
+    color: var(--Black);
+}
+
+.contact-form textarea::placeholder {
+    color: var(--Black);
+}
+
+/* --------------- 3.6 Footer --------------------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+/* ------------------------------- 4. Media Queries -------------------------------- */
