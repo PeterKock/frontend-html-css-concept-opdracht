@@ -20,12 +20,13 @@
     Table of Contents
     1. Typography
     2. Layout
-        3.1 Reusable
-        3.2 Other
+        2.1 Reusable
+        2.2 Other
     3. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
+        3.1 Header
+        3.2 Introduction
+        3.3 Case Studies
+        3.4 Contact Us
     4. Media Queries
 ////////////////////////*/
 
@@ -92,6 +93,9 @@ p {
     align-items: center;
 }
 
+.top-padding {
+    padding: 100px 0;
+}
 /* --------------- 2.2 Other --------------------------- */
 
 button {
@@ -200,5 +204,63 @@ a:link {
     font-weight: 500;
     margin-top: 100px;
 }
+
+/* --------------- 3.3 Case Studies --------------------------- */
+
+#casestudies {
+    background-color: var(--Light-Gray);
+}
+
+.case-article-image-wrap img {
+    width: 100%;
+    box-shadow: 0 10px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+.case-article-image-wrap {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.case-article:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.case-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.case-article-container {
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 40px 40px 40px;
+}
+
+.case-article-container p {
+    font-weight: 400;
+    margin: 50px 0;
+}
+
+.case-article-squiggly {
+    margin-top: 24px;
+    width: 57px;
+    height: 6px;
+    background-image: url(../assets/squiggle_line.svg);
+}
+
+.case-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* --------------- 3.4 Contact Us --------------------------- */
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
