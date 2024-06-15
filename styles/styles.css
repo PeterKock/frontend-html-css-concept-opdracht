@@ -26,7 +26,8 @@
         3.1 Header
         3.2 Introduction
         3.3 Case Studies
-        3.4 Contact Us
+        3.4 Services
+        3.5 Contact Us
     4. Media Queries
 ////////////////////////*/
 
@@ -77,24 +78,30 @@ p {
 /* --------------- 2.1 Reusable ----------------------- */
 
 .outer-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     flex-basis: 1400px;
     flex-shrink: 1;
     flex-grow: 0;
     margin: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .top-padding {
     padding: 100px 0;
+}
+
+.text-center {
+    text-align: center;
+    max-width: 1000px
 }
 /* --------------- 2.2 Other --------------------------- */
 
@@ -260,7 +267,46 @@ a:link {
     letter-spacing: 1px;
 }
 
+/* --------------- 3.4 Services --------------------------- */
 
-/* --------------- 3.4 Contact Us --------------------------- */
+#services {
+    background-color: white;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 420px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    padding: 30px;
+    background-color: white;
+    border: 4px solid var(--Purple);
+    box-shadow: 0 10px 6px -4px rgba(0, 0, 0, 0.3);
+    color: var(--Gray);
+    font-size: 26px;
+}
+
+.service-box-header {
+    color: var(--Purple);
+    font-size: 26px;
+}
+
+.service-box-icon {
+    width: 100px;
+}
+
+#services div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* --------------- 3.5 Contact Us --------------------------- */
+
+
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
