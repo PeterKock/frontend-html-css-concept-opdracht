@@ -28,6 +28,7 @@
         3.3 Case Studies
         3.4 Services
         3.5 Contact Us
+        3.5 Footer
     4. Media Queries
 ////////////////////////*/
 
@@ -39,7 +40,7 @@ body {
     font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
     font-family: Merriweather, 'Times New Roman', serif;
 }
 
@@ -170,9 +171,6 @@ a:link {
     padding: 100px 0;
     margin-bottom: 88px;
     font-size: 28px;
-
-    max-width: 850px;
-    text-align: center;
 }
 
 .header-squiggly {
@@ -353,6 +351,14 @@ a:link {
     color: var(--Black);
 }
 
-/* --------------- 3.5 Contact Us --------------------------- */
+/* --------------- 3.6 Footer --------------------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
 
 /* ------------------------------- 4. Media Queries -------------------------------- */
